@@ -9,8 +9,8 @@ public class Contador {
         }
         else{
             int cont = parametrodois - parametroum;
-            for(int x = 0;x<=cont;x++){
-                System.out.println(x);
+            for(int x = 1;x<=cont;x++){
+                System.out.println("Imprimindo o número "+x);
             }
             
         }
@@ -26,7 +26,7 @@ public class Contador {
             contar(parametroum, parametrodois);
         }
         catch(ParametrosInvalidosException e){
-            System.out.println("O Parâmetro 1 é maior que o Parâmetro 2.");
+            System.out.println("O segundo parâmetro deve ser maior que o primeiro");
         }
 
     }
