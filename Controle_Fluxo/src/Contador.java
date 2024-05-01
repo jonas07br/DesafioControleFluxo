@@ -5,16 +5,16 @@ public class Contador {
     static void contar(int parametroum,int parametrodois) throws ParametrosInvalidosException{
         if(parametroum>parametrodois){
             throw new ParametrosInvalidosException();
+        
         }
         else{
-            int contagem = parametroum - parametrodois;
-            for(int x =0;x<contagem;x++){
+            int cont = parametrodois - parametroum;
+            for(int x = 0;x<=cont;x++){
                 System.out.println(x);
             }
+            
         }
-        
-
-    }
+}
     public static void main(String[] args){
         
         Scanner scan = new Scanner(System.in);
